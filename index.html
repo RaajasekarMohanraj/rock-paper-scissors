@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Papers and Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="buttons-div">
+        <div>
+           <h1>Rock, Paper and Scissors</h1>
+        </div>
+        <div>
+            <button type="button" onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+    <div class="game-content">
+        <div class="Score-Div-parent">
+            <div class="Score-Div">
+                <p>User Score: </p>
+                <p id="user-score">0</p>
+            </div>
+            <div class="Score-Div">
+                <p>Computer Score: </p>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+    
+        <div>
+            <button type="button" onclick="onButtonClick()">Rock</button>
+            <button type="button" onclick="onButtonClick()">Paper</button>
+            <button type="button" onclick="onButtonClick()">Scissors</button>
+        </div>
+    </div>
+    <div id="snackbar"></div>
+</body>
+</html>

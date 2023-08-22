@@ -1,0 +1,83 @@
+button{
+    line-height: 45px;
+    width: 100px;
+    border-width: 3px;
+    border-style: none;
+    border-radius: 30px;
+    border-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    margin: 1rem;
+    cursor: pointer;
+} 
+p {
+    color: white;
+}
+body{
+    background-color: #1e1e2e;
+    /* BELOW is the GRADIENT... */
+    /* background: rgb(0,214,190);
+    background: linear-gradient(90deg, rgba(0,214,190,1) 0%, rgba(164,255,243,1) 35%, rgba(240,215,251,1) 100%); */
+}
+
+
+.Score-Div{
+    display: flex;
+    justify-content: space-between;
+    /* width: 25%; */
+    padding: 3%;
+}
+
+.Score-Div-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 25%; */
+    padding: 3%;
+}
+
+.Score-Div p{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+    text-decoration: underline;
+    padding-left: 50px;
+}
+
+.game-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #c2d0ff; /* Black background color */
+    color: #0a0044; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
